@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+}
+
+
+.form-inline {
+    display: flex;
+}
+
+.clientItems{
+    margin-right: 0;;
+}
+
+.btn {
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 1000ms;
+}
+
+.btn:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+.clientContainer {
+    width: 98vw;
+    height: 100vh;
+}
+
+.clientLocation {
+    padding: 20px;
+    width: 98.9vw;
+    border-radius: 10px;
+    height: 55px;
+    display: flex;
+    position: absolute;
+    top: 10%;
+    justify-content: space-between;
+}
+
+.location {
+    position: relative;
+    top: 2px;
+    display: flex;
+}
+
+.clientBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.dispose {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+    color: black;
+    height: 40px;
+}
+
+.dispose:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+#dispose:focus {
+    background-color: burlywood;
+    color: black;
+}
+
+#purchase:focus {
+    background-color: burlywood;
+    color: black;
+}
+
+.location-form-control {
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.locationBtn {
+    height: 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: limegreen;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.locationBtn:hover {
+    color: white;
+    background-color: rgb(83, 83, 83);
+    transition: 1000ms;
+}
+
+.location-form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientContent {
+    display: flex;
+    position: absolute;
+    top: 18%;
+    border-top: 1px solid grey;
+}
+
+.clientFilter {
+    width: 20vw;
+    height: 100vh;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+#filterUl{
+    list-style: none;
+}
+
+.clientWindow {
+    background: radial-gradient(burlywood,white,burlywood);
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 78.5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+    border-top:1px solid grey;
+    border-left:1px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.clientCards {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 18px;
+    border-radius: 20px;
+    box-shadow: -4px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage{
+    max-width: 280px;
+    max-height: 250px;
+}
+
+.collectorImage{
+    max-width: 280px;
+    max-height: 250px;
+}
+
+#cart{
+    width: 40px;
+    height: 40px;
+}
+
+#cart:hover{
+    color: transparent;
+    border-bottom: 0;
+}
+
+.collectorDetails{
+    width:280px;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#getDetails{
+    background-color: rgb(5, 134, 5);
+    border: none;
+    color: wheat;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of other elements */
+    transition: background-color 0.3s; /* Smooth transition for the background */
+  }
+  
+  /* Blurred Content */
+  .blurred-content {
+    filter: blur(5px); /* Apply blur effect to the content behind the modal */
+    transition: filter 0.3s; /* Smooth transition for the blur effect */
+    max-width: 98vw;
+  }
+
+  .login-modal {
+    background-color: #fff; /* Background color for the modal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for the modal */
+    display: none;
+    width: 400px;
+    height: 500px;
+  }
+  
+  /* Show the modal and overlay when the 'show' class is applied */
+  .modal-overlay.show {
+    display: flex;
+  }
+  
+  .login-modal.show {
+    display: block;
+  }
+
+  .login-modal #loginForm{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-modal #loginForm .loginInput{
+    margin: 10px 0;
+  }
+
+  .login-modal #loginForm #loginBtn{
+    width: 80px;
+    font-size: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 144, 0);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clientSignUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #clientFooter{
+    position: relative;
+    bottom: -300px;
+  }
